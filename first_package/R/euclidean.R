@@ -1,9 +1,9 @@
-euclidean <- function(num1, num2) {
-  stopifnot(is.numeric(num1),is.numeric(num2))
-  least_num <- min(num1, num2)
+euclidean <- function(n, m) {
+  stopifnot(is.numeric(n),is.numeric(m))
+  least_num <- min(n, m)
   output <- 1
   for (i in 1:least_num) {
-    if (num1 %% i == 0 && num2 %% i == 0) {
+    if (n %% i == 0 && m %% i == 0) {
       output <- i
     }
   }
