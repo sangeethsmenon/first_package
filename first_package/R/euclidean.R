@@ -1,4 +1,5 @@
 euclidean <- function(num1, num2) {
+  stopifnot(is.numeric(num1),is.numeric(num2))
   least_num <- min(num1, num2)
   output <- 1
   for (i in 1:least_num) {
