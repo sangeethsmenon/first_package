@@ -1,0 +1,52 @@
+dijkstra <- function(graph, init_node) {
+  actual_vertices <- unique(c(graph$v1, graph$v2))
+  no_vertices <- length(actual_vertices)
+  short <- rep(Inf, no_vertices)
+  short[init_node] <- 0
+  checked_vertices <- rep(FALSE, no_vertices)
+  for (no in 1:(no_vertices - 1)) {
+    
+    initial_length <- Inf
+    start_vertex <- -1
+    for (i in 1:no_vertices) {
+      if (!checked_vertices[i] && short[i] < initial_length) {
+        initial_length <- short[i]
+        start_vertex <- i
+      }
+    }
+    checked_vertices[start_vertex] <- TRUE
+    
+  
+    for (element in 1:nrow(graph)) {
+      if (!checked_vertices[graph$v2[element]] && graph$v1[element] == actual_vertices[start_vertex] &&
+          (short[start_vertex] + graph$w[element] < short[graph$v2[element]])) {
+        short[graph$v2[element]] <- short[start_vertex] + graph$w[element]
+      }
+    }
+  }
+  
+  return(short)
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
