@@ -3,7 +3,9 @@ Type: Package
 Title: Includes two functions Euclidean and Dijkstra's algorithm
 Version: 1.0
 Date: 2023-09-15
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Sangeeth Developer, Priya Developer
+Maintainer: Sangeeth Developer<sansa237@student.liu.se>
+Description: Euclidian algorithm to find the greatest common divisor of two
+numbers and Dijkstras algorithm to find the shortest path from the
+initial node to every other node in the graph.
+License: GPL (>=2)
