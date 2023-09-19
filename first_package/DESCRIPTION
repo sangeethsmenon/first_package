@@ -1,4 +1,4 @@
-Package: my.first.package
+Package: first_package
 Type: Package
 Title: Includes two functions Euclidean and Dijkstra's algorithm
 Version: 1.0
